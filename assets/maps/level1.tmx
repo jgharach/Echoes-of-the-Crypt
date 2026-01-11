@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="17" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="21">
+ <tileset firstgid="1" source="../tilesets/Background.tsx"/>
+ <tileset firstgid="481" source="../tilesets/objects.tsx"/>
+ <tileset firstgid="485" source="../tilesets/platform.tsx"/>
+ <tileset firstgid="522" source="../tilesets/trap.tsx"/>
+ <layer id="1" name="background" width="30" height="17" opacity="0.9">
+  <data encoding="base64" compression="zlib">
+   eJzFzWN3GAYAQNHUbmrbtm3btm3bSuomtW3btm2M7dBudbfu/oud8+7nFyYgICAs4QhPBCISichEISrRiE4MYhJILGITh7jEIz4JSEgiEpOEpCQjOSlISSpSk4a0pCM9GchIJjKThaxkIzs5yEkucpOHvOQjPwUoSCEKU4SiFKM4JShJKUpThrKUozwVqEglKlOFqlSjOjWoSS1qU4e61KM+DWhIIxrThKY0ozktaEkrWtOGtrSjPR3oSCc604WudKM7PehJL3rTh770oz8DGMggBjOEoQxjOCMYyShGM4axjGM8E5jIJCYzhalMI4hgpjODmcxiNnOYyzxCCGU+C1jIIhazhKUsYzkrWMkqVrOGtaxjPRvYyCY2s4WtbGM7O9jJLnazh73sYz8HOMghDnOEoxzjOCc4ySlOc4aznOM8F7jIJS5zhatc4zo3uMktbnOHu9zjPg94yCMe84SnPOM5L3jJK37gR37iZ37hV17zht/4nT/4k7e84y/+5j0f+MgnPvOFr3zjH/7lOwFhRFjCEZ4IRCQSkYlCVKIRnRjEJJBYxCYOcYlHfBKQkEQkJglJSUZyUpCSVKQmDWlJR3oykJFMZCYLWclGdnKQk1zkJg95yUd+ClCQQhSmCEUpRnFKUJJSlKYMZSlHeSpQkUpUpgpVqUZ1alCTWtSmDnWpR30a0JBGNKYJTWlGc1rQkla0pg1taUd7OtCRTnSmC13pRnd60JNe9KYPfelHfwYwkEEMZghDGcZwRjCSUYxmDGMZx3gmMJFJTGYKU5lGEMFMZwYzmcVs5jCXeYQQynwWsJBFLGYJS1nGclawklWsZg1rWcd6NrCRTWxmC1vZxnZ2sJNd7GYPe9nHfg5wkEMc5ghHOcZxTnCSU5zmDGc5x3kucJFLXOYKV7nGdW5wk1vc5g53ucd9HvCQRzzmCU959j9+/wO0sft9
+  </data>
+ </layer>
+ <layer id="3" name="foreground" width="30" height="17">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgY8JJxYOiBAiD730Ld8IaG9GsoHij/DlR4D4b4Hc72DbT9xNjHxAShmdFoFiby1JFqPzXBaPwOjP3PcNDP0dz3lEh1uNQTW1+9AtJcSOmSgwk3hqlDVv+CEYLfo5kLAHlhOyY=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Calque d'Objets 1">
+  <object id="15" gid="482" x="65" y="471.833" width="46" height="51">
+   <properties>
+    <property name="family" value="entity"/>
+    <property name="type" value="player"/>
+   </properties>
+  </object>
+  <object id="19" gid="484" x="324" y="313" width="57" height="92">
+   <properties>
+    <property name="family" value="entity"/>
+    <property name="type" value="enemy"/>
+   </properties>
+  </object>
+  <object id="20" gid="484" x="651" y="314" width="57" height="92">
+   <properties>
+    <property name="family" value="entity"/>
+    <property name="type" value="enemy"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
