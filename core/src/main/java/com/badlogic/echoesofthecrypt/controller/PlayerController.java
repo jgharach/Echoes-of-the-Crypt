@@ -31,18 +31,12 @@ public class PlayerController implements Updatable {
     }
 
     /**
-     * Initialise la liste des joueurs à partir du manager.
-     */
-    public void setPlayers() {
-        players = entityModelManager.getPlayers();
-    }
-
-    /**
      * Sélectionne le joueur principal (le premier de la liste).
      *
      * @return le joueur principal, ou null si aucun joueur
      */
     public PlayerModel selectMainPlayer() {
+        players = entityModelManager.getPlayers();
         if (!players.isEmpty()) {
             playerModel = players.get(0);
             return playerModel;

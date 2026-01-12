@@ -17,6 +17,8 @@ public class EntityModelManager {
 
     /** Liste des entités dans le jeu */
     private final Array<EntityModel> entities = new Array<>();
+    private final Array<PlayerModel> players = new Array<>();
+
 
     /**
      * Ajoute une entité à la liste.
@@ -42,7 +44,6 @@ public class EntityModelManager {
      * @return liste des joueurs
      */
     public Array<PlayerModel> getPlayers() {
-        Array<PlayerModel> players = new Array<>();
         for (EntityModel e : entities) {
             if (e instanceof PlayerModel) {
                 players.add((PlayerModel) e);

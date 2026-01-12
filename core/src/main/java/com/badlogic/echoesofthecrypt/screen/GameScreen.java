@@ -225,7 +225,6 @@ public class GameScreen implements Screen {
         tiledMapController.initialize();
 
         // Sélection du joueur principal
-        playerController.setPlayers();
         playerModel = playerController.selectMainPlayer();
 
     }
