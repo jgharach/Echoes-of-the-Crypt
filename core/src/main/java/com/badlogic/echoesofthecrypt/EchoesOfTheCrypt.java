@@ -28,17 +28,35 @@ public class EchoesOfTheCrypt extends Game {
         }
     }
 
+    /**
+     * Méthode appelée lors de la création du jeu.
+     * <p>
+     * Initialise l'écran principal {@link GameScreen} avec la map spécifiée.
+     * </p>
+     */
     @Override
     public void create() {
         Gdx.app.log("Jeu", "Chargement de la map : " + mapPath);
         setScreen(new GameScreen(mapPath));
     }
 
+    /**
+     * Méthode de rendu appelée à chaque frame.
+     * <p>
+     * Appelle la méthode {@link Game#render()} pour déléguer le rendu à l'écran courant.
+     * </p>
+     */
     @Override
     public void render() {
         super.render();
     }
 
+    /**
+     * Libère les ressources utilisées par le jeu.
+     * <p>
+     * Dispose l'écran courant si présent, puis appelle {@link Game#dispose()}.
+     * </p>
+     */
     @Override
     public void dispose() {
         if (getScreen() != null) getScreen().dispose();
