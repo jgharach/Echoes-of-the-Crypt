@@ -240,7 +240,7 @@ public class GameScreen implements Screen {
         Gdx.gl.glClearColor(0f, 0f, 0f, 1f);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-        // Met à jour tous objets
+        // Met à jour tous les objets
         for (Updatable u : updatables) u.update(delta);
 
         // La caméra suit le joueur et limite ce qui peut être vu aux limites de la map
